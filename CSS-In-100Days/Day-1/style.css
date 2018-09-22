@@ -1,0 +1,79 @@
+html, body, .container {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.render-container {
+  width: 400px;
+  height: 350px;
+  margin: 10vh auto;
+  padding: 50px;
+  box-sizing: border-box;
+  background: #FF5F6D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.render-container > div {
+  display: inline-block;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.one-head {
+  width: 20px;
+  height: 40px;
+  border-radius: 2px;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+  transform: translateX(35px) translateY(-59px) rotateZ(45deg);
+}
+
+.one-body {
+  width: 20px;
+  height: 100px;
+  border-radius: 2px;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+  transform: translateX(27px);
+  position: relative;
+  z-index: 99;
+}
+
+.zero-one, .zero-two {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 20px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.zero-one {
+  z-index: 9;
+  transform: translateX(15px);
+}
+
+.zero-two {
+  transform: translateX(-5px);
+  z-index: 1;
+}
+
+.copywrite {
+  display: block;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.days {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 21px;
+}
